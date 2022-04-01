@@ -10,7 +10,47 @@
     <link rel="home" href=""/>
     <meta name="description" content="">
     <meta name="keywords" content="">
+  <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
     <!-- ================================
     Start CSS
     ================================= -->
@@ -32,32 +72,27 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-auto">
-              <div class="logoCol"><a href="index.html"><img src="images/c3b3618e02394b239139615475c3b1aa.png" alt="..."></a></div>
+              <div class="logoCol"><a href="index.html"><img src="images/c3b3618e02394b239139615475c3b1aa.png"width="100 height="100"</a></div>
             </div>
 			  <nav>
                 <div class="selected-lang">
                 </div>
-                <ul>
-                    <li>
-                        <a href="index-de.html" class="de">German</a>
-                    </li>
-                    <li>
-                        <a href="index.html"en">English</a>
-                    </li>
-                  <li>
-                        <a href="index-ar.html"ar">Arabic</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-            <div class="col">
+			  <div class="dropdown">
+            <button class="dropbtn">Select Language</button>
+  <div class="dropdown-content">
+  <a href="index-de.html">German</a>
+  <a href="index.html">English</a>
+  <a href="index-ar.html">Arabic</a>
+    </div>
+       </div>
+         <div class="col">
               <div class="d-md-none">
                 <button class="navToggle">
                   <span class="navToggle__text">Toggle Menu</span>
                 </button>
               </div>
               <div class="navCollapseCol">
-                <div class="navCol">
+                              <div class="navCol">
                   <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -66,10 +101,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+         </div>
     </header>
     <!-- ================================
     End Navigation Bar
@@ -81,28 +113,25 @@
     <section>
       <div class="innerPageBannerCol">
         <div class="container">
-          <div class="row g-4 g-md-3  align-items-center">
+          <div class="row g-2 g-md-1  align-items-center">
             <div class="col-md-6">
               <div class="bannerContent">
                 <h1 class="xlTitle pb-md-3">Contact me below</h1>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </section>
-
     <section>
       <div class="lightBg">
         <div class="container">
             <form id="contactForm">
-                <label for="name">Name</label>
+                <label for="Eng.Ahmed Ismail">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name..">
 
-                <label for="email">Email</label>
+                <label for="ismail_a_a@yahoo.com">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your email..">
 
-                <label for="subject">Message</label>
+                <label for="write your subject">Message</label>
                 <textarea id="message" name="message" placeholder="Write something.." rows="6"></textarea>
 
                 <input class='btn btnPrimary' type="submit" value="Submit">
