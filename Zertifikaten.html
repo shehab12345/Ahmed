@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumente und Zertifikate</title>
+  <!-- Add Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Additional CSS for customization */
+    /* Hide the text in the section headings */
+    section h2 {
+      display: none;
+    }
+
+    /* Style the folder icons */
+    section::before {
+      content: "\f07c"; /* Folder Open icon for Folders 1, 2, and 3 */
+      color: #f39c12; /* Change the folder icon color to yellow */
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 3rem; /* Increase the icon size to 3x */
+      display: inline-block;
+      margin-right: 0.5rem;
+      position: relative;
+    }
+
+    /* Add badge to indicate files inside */
+    section::after {
+      content: "3"; /* Change this number to represent the number of files */
+      background-color: #f39c12; /* Yellow background for the badge */
+      color: #fff; /* Text color for the badge */
+      font-size: 0.8rem; /* Size of the badge text */
+      padding: 2px 6px; /* Adjust padding for the badge */
+      border-radius: 50%; /* Make the badge circular */
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+
+    /* Customize icons for each section */
+    section:nth-child(4)::after {
+      content: "7"; /* Number of files for Folder 1 */
+    }
+
+    section:nth-child(5)::after {
+      content: "12"; /* Number of files for Folder 2 */
+    }
+
+    section:nth-child(6)::after {
+      content: "5"; /* Number of files for Folder 3 */
+    }
+
+    /* Add styling for Bootstrap components */
+    body {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      cursor: pointer; /* Add cursor pointer to indicate a clickable link */
+    }
+
+    section a {
+      color: #333; /* Change the link color */
+    }
+
+    /* Style the folder descriptions */
+    section p {
+      margin-top: 5px;
+    }
+
+    /* Additional styling for the layout */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .left-section,
+    .right-section {
+      width: 30%;
+      text-align: center;
+    }
+
+    .welcome-line {
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+    <div class="welcome-line">
+      <span>Hallo</span> <span>Lina</span> <span>and</span> <span>welcome</span> <span>to</span> <span>my</span> <span>web</span> <span>page</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="left-section">
+        <section>
+          <a href="images.html">
+            <h2>Images</h2>
+          </a>
+          <p>This folder contains image files.</p>
+          <!-- Add your image files to the 'images' folder -->
+          <!-- Display images using <img> tag, e.g.: -->
+          <!-- <img src="images/image1.jpg" alt="Image 1"> -->
+        </section>
+
+        <section>
+          <a href="documents.html">
+            <h2>Documents</h2>
+          </a>
+          <p>This folder contains document files.</p>
+          <!-- Add your document files to the 'documents' folder -->
+          <!-- Display links to documents using <a> tag, e.g.: -->
+          <!-- <a href="documents/document1.pdf" target="_blank">Document 1</a> -->
+        </section>
+
+        <section>
+          <a href="videos.html">
+            <h2>Videos</h2>
+          </a>
+          <p>Bachelor (Zertifikate-ECTs-Grades)</p>
+          <!-- Add your video files to the 'videos' folder -->
+          <!-- Display video using <video> tag, e.g.: -->
+          <!-- <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+              </video> -->
+        </section>
+      </div>
+
+      <div class="right-section">
+        <section>
+          <a href="Arbeit Erfahrungen.html">
+            <h2>Folder 1</h2>
+          </a>
+          <p>Arbeit Erfahrungen</p>
+          <!-- Add files to 'Arbeit Erfahrungen' -->
+          <!-- You can use a form and input[type="file"] to allow file upload -->
+          <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+               <input type="file" name="file">
+               <input type="submit" value="Upload">
+             </form> -->
+        </section>
+
+        <section>
+          <a href="folder2.html">
+            <h2>Kurses</h2>
+          </a>
+          <p>Zertficaten</p>
+          <!-- Add files to 'folder2' -->
+          <!-- You can use a form and input[type="file"] to allow file upload -->
+          <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+               <input type="file" name="file">
+               <input type="submit" value="Upload">
+             </form> -->
+        </section>
+
+        <section>
+          <a href="folder3.html">
+            <h2>Folder 3</h2>
+          </a>
+          <p>Sprachen Certificaten</p>
+          <!-- Add files to 'folder3' -->
+          <!-- You can use a form and input[type="file"] to allow file upload -->
+          <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+               <input type="file" name="file">
+               <input type
