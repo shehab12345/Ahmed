@@ -327,7 +327,7 @@
     </div>
     <div class="col-md">
       <div class="portfolioContentCol">
-        <h4 class="lgTitle"><a href="./video/arb.mp4">تعريف بالعربي</a></h4>
+        <h4 class="lgTitle"><a href="./video/arb.mp4">ntroduction in Arabic</a></h4>
         <ul class="portfolioOption">
           <li><span class="dateLbl">2021</span></li>
         </ul>
@@ -422,23 +422,21 @@
           <div class="row g-3">
             <div class="col-lg-6">
               <div class="cardStyle1">
-                <h4 class="mdTitle cs1Title"><a href="javascript:void(0)">How to implement Django into your project</a></h4>
+                <h4 class="mdTitle cs1Title"><a href="javascript:void(0)">How to fix RDC Remote Desktop Connection not able to connect with host name</a></h4>
                 <ul class="cardOptionCol">
                   <li>08 Oct 2021</li>
                   <li>Django</li>
                 </ul>
 
-                  <p>Creating the Virtual Environment
+                  <p>How to fix RDC Remote Desktop Connection not able to connect with host name but can connect only wth ip,to do so ipconfig /flushdns the 
+ connect to AD and go to DNS Record Verification in the Forward Lookup Zone, Navigate to the FLZ: In the DNS Manager, locate the forward lookup zone (FLZ) for your domain. Right-click on the zone name and select "Other Tasks" -> "All Tasks" -> "View Records."
+Check for A Record: Verify that an A record (host record) exists for the remote computer you're trying to access via RDP. This record should map the computer name (e.g., "[yourcomputername]") to its corresponding IP address.
+Here's an example of how an A record should look in your forward lookup zone:
 
-First, let’s create a new virtual environment for this project. (If you haven’t already, deactivate the previous virtualenv by typing deactivate in the terminal). For more info on virtual environments and how to use them, visit this page.
-
-Navigate to the directory where you want the Django project and type the following into the terminal:
-
-mkvirtualenv taskplanner --python=/usr/bin/python3
-
-You may have to change your Python path if it looks different than the one above.
-
-The command line shell should now look like below, indicating you are in a virtual environment.<span id="dots">...</span><span id="more">
+Name (A)        TTL     Address
+-------         ----     -------
+[yourcomputername]  3600    192.168.1.10 (Replace with actual IP)
+			 </p><span id="dots">...</span><span id="more">
 
 (taskplanner)<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads' target='_blank' rel='nofollow'>munsterberg@Lenovo ~/workspace] $
 
