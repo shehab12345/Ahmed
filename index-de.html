@@ -426,17 +426,20 @@
           <div class="row g-3">
             <div class="col-lg-6">
               <div class="cardStyle1">
-                <h4 class="mdTitle cs1Title"><a href="javascript:void(0)">How to implement Django into your project</a></h4>
+                <h4 class="mdTitle cs1Title"><a href="javascript:void(0)">Wie behebt man, dass die RDC-Remotedesktopverbindung keine Verbindung mit dem Hostnamen herstellen kann?</a></h4>
                 <ul class="cardOptionCol">
                   <li>08 Oct 2021</li>
                   <li>Django</li>
                 </ul>
 
-                  <p>Erstellen der virtuellen Umgebung Zunächst erstellen wir eine neue virtuelle Umgebung für dieses Projekt. (Falls noch nicht geschehen, deaktivieren Sie die vorherige virtuelle Umgebung durch Eingabe von deactivate im Terminal).<span id="dots">...</span><span id="more">
+                  <p>Wie behebt man, dass die RDC-Remotedesktopverbindung keine Verbindung mit dem Hostnamen herstellen kann, sondern nur mit der IP-Adresse, um dies zu tun ipconfig /flushdns die 
+ Verbinden Sie sich mit AD und gehen Sie zu DNS Record Verification in the Forward Lookup Zone, Navigieren Sie zur FLZ: Suchen Sie im DNS Manager die Forward Lookup Zone (FLZ) für Ihre Domäne. Klicken Sie mit der rechten Maustaste auf den Zonennamen und wählen Sie "Andere Aufgaben" -> "Alle Aufgaben" -> "Datensätze anzeigen".
+Prüfen Sie auf einen A-Eintrag: Überprüfen Sie, ob ein A-Eintrag (Host-Eintrag) für den Remote-Computer existiert, auf den Sie über RDP zugreifen möchten. Dieser Eintrag sollte den Computernamen (z. B. "[Ihr Computername]") der entsprechenden IP-Adresse zuordnen.
+Hier ist ein Beispiel dafür, wie ein A-Eintrag in Ihrer Forward-Lookup-Zone aussehen sollte:
 
-(taskplanner)<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads' target='_blank' rel='nofollow'>munsterberg@Lenovo ~/workspace] $
-
-</span></p>
+Name (A) TTL Adresse
+------- ---- -------
+[yourcomputername] 3600 192.168.1.10 (Ersetzen Sie durch die tatsächliche IP-Adresse)</span></p>
               </div>
             </div>
             <div class="col-lg-6">
